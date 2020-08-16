@@ -1,0 +1,23 @@
+.more {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1.5em;
+    margin: 50px 0;
+
+    &::after {
+      content: "";
+      width: 20px;
+      height: 2px;
+      background: $dark;
+    }
+
+    a {
+      color: $dark;
+      padding-right: 40px;
+    }
+
+    @include lg {
+      margin: 100px 0;
+    }
+  }

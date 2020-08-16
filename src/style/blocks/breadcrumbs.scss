@@ -1,0 +1,11 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  text-transform: none;
+  font-family: "Gotham-regular";
+
+  a {
+    color: $dark;
+    border-bottom: 1px solid $light-gray;
+  }
+}

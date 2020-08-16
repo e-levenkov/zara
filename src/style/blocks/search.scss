@@ -1,0 +1,42 @@
+.search {
+  position: relative;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transition: all .2s cubic-bezier(.22, .57, .65, .9);
+
+  &:focus {
+    margin-top: -15px;
+    transition: all .2s cubic-bezier(.22, .57, .65, .9);
+    .search__field {
+      visibility: visible;
+      width: 100%;
+      height: 30px;
+      transition: all .2s cubic-bezier(.22, .57, .65, .9);
+    }
+  }
+  &__field {
+    visibility: hidden;
+    position: absolute;
+    outline: none;
+    border: none;
+    box-shadow: none;
+    bottom: -55%;
+    left: -5px;
+    width: 0;
+    height: 0;
+    border-bottom: 2px solid $dark;
+    transition: all .2s cubic-bezier(.22, .57, .65, .9);
+
+    &:hover,
+    &:focus {
+      visibility: visible;
+      width: 100%;
+      height: 30px;
+      transition: all .2s cubic-bezier(.22, .57, .65, .9);
+    }
+    &:focus {
+      bottom: -35px;
+    }
+  }
+}

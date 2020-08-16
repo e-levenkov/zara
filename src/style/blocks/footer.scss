@@ -1,0 +1,64 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/footer/footer-background.svg");
+  background-size: cover;
+  padding: 60px 0;
+  letter-spacing: .15em;
+  line-height: 150%;
+
+  @include md {
+    padding: 100px 0;
+  }
+
+  &__logo {
+    width: 50px;
+
+    @include md {
+      width: 100px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 80px 15px 50px;
+    font-size: 12px;
+
+    @include sm {
+      justify-content: space-between;
+    }
+
+    &-item {
+      padding: 10px 0;
+      color: rgba(255, 255, 255, .3);
+      &_active {
+        color: $defaultColor;
+      }
+    }
+  }
+
+  &__border {
+    width: 60%;
+    background-color: rgba(255, 255, 255, .25);
+    opacity: .2;
+    margin-bottom: 50px;
+  }
+
+  &__privacy {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 10px;
+    color: $defaultColor;
+
+    &-link {
+      color: $defaultColor;
+      padding: 0 10px;
+    }
+  }
+}

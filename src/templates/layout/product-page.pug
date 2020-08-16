@@ -1,0 +1,18 @@
+include ../components/head.pug
+include ../components/header.pug
+include ../components/footer.pug
+include ../components/product-page/product-card.pug
+include ../components/product-page/similar.pug
+
+
+doctype html
+html(lang='ru')
+    +head()
+    body
+        +header()
+        +product-card("../images/product-page/product-card-img.svg","../images/product-page/product-card-img.svg",'WAISTCOAT WITH CONTRAST PIPING','$24','Round neck waistcoat featuring front welt pockets, contrast trims, a pleat in the back and metal appliqué fastening in the front.',' Color: Navy Blue Height of model: 177 cm. / 5′ 9″ 2388/749')
+        +similar()
+        +footer()
+        
+        script(src='../js/bundle.js')
+        

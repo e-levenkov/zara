@@ -1,0 +1,15 @@
+include ../components/head.pug
+include ../components/header.pug
+include ../components/footer.pug
+include ../components/catalog/products.pug
+
+doctype html
+html(lang='ru')
+    +head()
+    body
+        +header()
+        +products()
+        +footer()
+        
+        script(src='../js/bundle.js')
+        

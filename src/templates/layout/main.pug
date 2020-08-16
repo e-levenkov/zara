@@ -1,0 +1,20 @@
+include ../components/head.pug
+include ../components/header.pug
+include ../components/main/slider.pug
+
+doctype html
+html(lang='ru')
+    +head()
+    body
+        +header()
+        +slider()
+        .logo.d-none.d-xl-block
+            .logo__main
+                img(src="../images/Logo.svg", alt="logo")
+        .shopping.d-none.d-lg-block
+            a(href="./Catalog.html") shop
+
+
+        
+        script(src='../js/bundle.js')
+        

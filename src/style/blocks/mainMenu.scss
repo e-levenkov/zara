@@ -1,0 +1,127 @@
+.mainMenu {
+  background-color: $defaultColor;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 400;
+  padding: 100px 0 0;
+
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  text-transform: none;
+  opacity: 0;
+  transition: all 500ms cubic-bezier(.68, -.55, .265, 1.55);
+  transform: scale(0);
+  list-style: none;
+
+  @include md {
+    padding: 200px 0 0;
+  }
+
+  &.act {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  &__wrapper {
+    width: 90%;
+  }
+
+  &__item {
+    font-size: 60px;
+    line-height: 150%;
+    text-shadow: 0px 0px 5px #a8a8a8;
+
+    @include sm {
+      font-size: 100px;
+      line-height: 150%;
+    }
+
+    @include md {
+      font-size: 150px;
+      line-height: 150%;
+    }
+
+    @include lg {
+      font-size: 150px;
+      line-height: 150%;
+    }
+
+    &-link {
+      color: $defaultColor;
+      position: relative;
+      z-index: 410;
+      &:hover {
+        color: $defaultColor;
+      }
+      &:focus {
+        color: $dark;
+      }
+    }
+
+    .fill {
+      display: none;
+      position: absolute;
+      left: 0;
+      overflow: hidden;
+      color: $dark;
+      animation: fill .5s linear;
+      animation-timing-function: cubic-bezier(.22, .57, .65, .9);
+    }
+
+    &:hover {
+      .fill {
+        display: inline;
+      }
+    }
+
+    @keyframes fill {
+      0% {
+        width: 0;
+      }
+
+      100% {
+        width: 100%;
+      }
+    }
+  }
+
+  &__border {
+    margin-top: -25px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    @include sm {
+      margin-top: -40px;
+    }
+
+    @include md {
+      margin-top: -60px;
+    }
+  }
+
+  &__search {
+    position: absolute;
+    display: flex;
+    letter-spacing: 1.5em;
+    bottom: 5%;
+
+    &-field {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      border-bottom: 2px solid $dark;
+      transform: translateY(-10px);
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    background-color: $defaultColor;
+  }
+}

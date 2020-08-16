@@ -1,0 +1,14 @@
+mixin product(imagePath,title, price, salePrice)
+    .product
+        a(href="./Product-page.html")
+            .product__image
+                img(src= imagePath, alt="product image")
+        a(href="#")
+            .product__title
+                p= title
+        .product__price
+            if(salePrice)
+                p.product__price_sale= salePrice
+                p= price
+            else
+                p= price

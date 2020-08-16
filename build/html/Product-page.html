@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Zara</title>
+    <link rel="stylesheet" href="../css/style.css"/>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><a class="header__menu header__item" href="#">
+          <div class="header__menu-button">
+            <div class="mainContainer">
+              <div class="menuBtn"><span class="lines"></span></div>
+              <div class="header__menu-title d-none d-md-block">Menu</div>
+            </div>
+          </div></a>
+        <nav class="mainMenu">
+          <div class="container">
+            <ul class="mainMenu__list">
+              <li class="mainMenu__item"><a class="mainMenu__item-link" href="./Catalog.html">Woman</a>
+                <hr class="mainMenu__border"/>
+              </li>
+              <li class="mainMenu__item"><a class="mainMenu__item-link" href="./Catalog.html">Man</a>
+                <hr class="mainMenu__border"/>
+              </li>
+              <li class="mainMenu__item"><a class="mainMenu__item-link" href="./Catalog.html">Kids</a>
+                <hr class="mainMenu__border"/>
+              </li>
+              <li class="mainMenu__item"><a class="mainMenu__item-link" href="./Catalog.html">Stories</a>
+                <hr class="mainMenu__border"/>
+              </li>
+              <li class="mainMenu__item"><a class="mainMenu__item-link" href="./Catalog.html">SALE</a>
+                <hr class="mainMenu__border"/>
+              </li>
+            </ul>
+            <div class="mainMenu__search d-md-none">srch
+              <input class="mainMenu__search-field" type="search"/>
+            </div>
+          </div>
+        </nav><a class="header__search header__item d-none d-md-block search" href="#">srch
+          <input class="search__field" type="search"/></a><a class="header__cart header__item" href="#">
+          <div class="header__cart-long-fig d-none d-xl-block"></div>
+          <div class="header__cart-short-fig"></div>
+          <p>Cart</p>
+          <div class="header__cart-count">3</div></a>
+      </header>
+    </div>
+    <div class="container">
+      <div class="product-card">
+        <div class="product-card__gallery">
+          <div class="product-card__img"><img id="js-currentImg" src="../images/product-page/product-card-img-preview.svg" alt=""/></div>
+          <div class="product-card__img-previews js-imgs">
+            <div class="product-card__img-preview"><img src="../images/product-page/product-card-img-preview.svg" alt=""/></div>
+            <div class="product-card__img-preview"><img src="../images/product-page/product-card-img-preview2.svg" alt=""/></div>
+            <div class="product-card__img-preview"><img src="../images/product-page/product-card-img-preview3.svg" alt=""/></div>
+            <div class="product-card__img-preview"><img src="../images/product-page/product-card-img-preview4.svg" alt=""/></div>
+          </div>
+        </div>
+        <div class="product-card__about-product"> 
+          <div class="breadcrumbs"><a href="#">Main page </a>
+            <p> / </p><a href="#">Catalog</a>
+            <p> / </p><a href="#">Coat & Jackets</a>
+          </div>
+          <div class="product-card__about-product-title"> 
+            <p>WAISTCOAT WITH CONTRAST PIPING</p>
+          </div>
+          <div class="product-card__about-product-price"> 
+            <p>$24</p>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <div class="product-card__about-product-discription"> 
+                <p class="product-card__subtitle">description</p>
+                <p class="product-card__about-product-text">Round neck waistcoat featuring front welt pockets, contrast trims, a pleat in the back and metal appliqué fastening in the front.</p>
+              </div>
+            </div>
+            <div class="col-5"> 
+              <div class="product-card__about-product-summary"> 
+                <p class="product-card__subtitle">Summary</p>
+                <p class="product-card__about-product-text"> Color: Navy Blue Height of model: 177 cm. / 5′ 9″ 2388/749</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-7">
+              <select class="js-select product-card__about-product-select">
+                <option value="XS">XS</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+              </select>
+            </div>
+            <div class="col-5"> 
+              <button class="product-card__button">
+                <p>Add to cart</p>
+                <p>+</p>
+              </button>
+            </div>
+          </div>
+          <hr class="product-card__border"/>
+          <p class="product-card__subtitle product-card__match-title">Match with</p>
+          <div class="row">
+            <div class="col-4">
+              <div class="product"><a href="./Product-page.html">
+                  <div class="product__image"><img src="../images/products/mathc-product.svg" alt="product image"/></div></a><a href="#">
+                  <div class="product__title">
+                    <p>white Shirt with feathers</p>
+                  </div></a>
+                <div class="product__price">
+                  <p class="product__price_sale">$14</p>
+                  <p>$24</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="product"><a href="./Product-page.html">
+                  <div class="product__image"><img src="../images/products/mathc-product1.svg" alt="product image"/></div></a><a href="#">
+                  <div class="product__title">
+                    <p> Printed flowing trousers</p>
+                  </div></a>
+                <div class="product__price">
+                  <p>$72</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="product"><a href="./Product-page.html">
+                  <div class="product__image"><img src="../images/products/mathc-product.svg" alt="product image"/></div></a><a href="#">
+                  <div class="product__title">
+                    <p> track sole ankle boots</p>
+                  </div></a>
+                <div class="product__price">
+                  <p>$64</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="similar-items">
+        <div class="similar-items__title">Similar Items</div>
+        <div class="row">
+          <div class="col-3">
+            <div class="product"><a href="./Product-page.html">
+                <div class="product__image"><img src="../images/products/product-image13.svg" alt="product image"/></div></a><a href="#">
+                <div class="product__title">
+                  <p> KNIT Waistcoat with vents</p>
+                </div></a>
+              <div class="product__price">
+                <p>$24</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product"><a href="./Product-page.html">
+                <div class="product__image"><img src="../images/products/product-image14.svg" alt="product image"/></div></a><a href="#">
+                <div class="product__title">
+                  <p> Waistcoat with vents</p>
+                </div></a>
+              <div class="product__price">
+                <p>$72</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product"><a href="./Product-page.html">
+                <div class="product__image"><img src="../images/products/product-image15.svg" alt="product image"/></div></a><a href="#">
+                <div class="product__title">
+                  <p> TEXTURED WAISTCOAT WITH COLLAR</p>
+                </div></a>
+              <div class="product__price">
+                <p>$64</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="product"><a href="./Product-page.html">
+                <div class="product__image"><img src="../images/products/product-image12.svg" alt="product image"/></div></a><a href="#">
+                <div class="product__title">
+                  <p> WAISTCOAT WITH CONTRAST PIPING</p>
+                </div></a>
+              <div class="product__price">
+                <p>$24</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="more"><a href="#">more</a></div>
+      </div>
+    </div>
+    <footer class="footer"><a class="footer__logo" href="./Main.html"><img src="../images/white-logo.svg" alt=""/></a>
+      <div class="footer__socials"><a class="footer__socials-item d-none d-xl-block" href="#">
+          <p>connect us</p></a><a class="footer__socials-item d-none d-xl-block" href="#">
+          <p>connect us</p></a><a class="footer__socials-item d-none d-md-block" href="#">
+          <p>connect us</p></a><a class="footer__socials-item footer__socials-item_active" href="#">
+          <p>INSTAGRAM</p></a><a class="footer__socials-item footer__socials-item_active" href="#">
+          <p>Facebook</p></a><a class="footer__socials-item footer__socials-item_active" href="#">
+          <p>Pinterest</p></a><a class="footer__socials-item footer__socials-item_active" href="#">
+          <p>YOUTUBE</p></a><a class="footer__socials-item footer__socials-item_active d-none d-md-block" href="#">
+          <p>VK</p></a><a class="footer__socials-item d-none d-md-block" href="#">
+          <p>connect us</p></a><a class="footer__socials-item d-none d-xl-block" href="#">
+          <p>connect us</p></a><a class="footer__socials-item d-none d-xl-block" href="#">
+          <p>connect us</p></a></div>
+      <hr class="footer__border"/>
+      <div class="footer__privacy"><a class="footer__privacy-link" href="#">
+          <p>privacy policy</p></a>
+        <p>/</p><a class="footer__privacy-link" href="#">
+          <p>terms of use</p></a>
+      </div>
+    </footer>
+    <script src="../js/bundle.js"></script>
+  </body>
+</html>

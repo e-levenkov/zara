@@ -1,0 +1,140 @@
+@import "./common/vars.scss";
+@import "./common/fonts.scss";
+@import "./common/fontello.scss";
+@import "./common/mixins.scss";
+@import "./common/bootstrap-grid.scss";
+@import "../../node_modules/swiper/css/swiper.scss";
+@import "../../node_modules/choices.js/public/assets/styles/choices.min.scss";
+@import "./blocks/header.scss";
+@import "./blocks/mainMenu.scss";
+@import "./blocks/menuBtn.scss";
+@import "./blocks/search.scss";
+@import "./blocks/shopping.scss";
+@import "./blocks/slider.scss";
+@import "./blocks/swiper.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/product.scss";
+@import "./blocks/product-card.scss";
+@import "./blocks/similar-items.scss";
+@import "./blocks/more.scss";
+@import "./blocks/choicejs.scss";
+@import "./blocks/breadcrumbs.scss";
+@import "./blocks/products.scss";
+@import "./blocks/sort.scss";
+@import "./blocks/filter.scss";
+@import "./blocks/checkbox.scss";
+@import "./blocks/footer.scss";
+
+body {
+  ::-webkit-scrollbar {
+    width: 3px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    width: 3px;
+    background: rgb(185, 185, 185);
+    opacity: .92;
+    border-radius: 3px;
+  }
+
+  font-family: "Gotham";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+  text-transform: uppercase;
+
+  color: #383838;
+
+  a {
+    &:hover,
+    &:focus {
+      color: #a0a0a0;
+    transition: all 500ms cubic-bezier(.68, -.55, .265, 1.55);
+
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd,
+i {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  margin: 0;
+  padding: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: transparent;
+}
+
+button {
+  outline: none;
+  
+}

@@ -1,0 +1,144 @@
+mixin sort()
+    .sort
+        .sort__categories
+            a(href="#").sort__category 
+                span Woman
+            a(href="#").sort__category 
+                span Man
+            a(href="#").sort__category 
+                span Kids
+            a(href="#").sort__category 
+                span Sale
+        hr.sort__border.d-none.d-sm-block
+        ul#js-accordion.filters
+            li.filter
+                .link.filter__title
+                    p.filter__name Size
+
+                    .filter__selected
+                        |Any
+                    .filter__state
+                        .filter__state_plus
+                            |+
+                        .filter__state_minus.d-none
+                            |-
+                    .filter__field
+                ul.submenu.filter__field
+                    .filter__discription
+                        p.filter__discription-title Choose your size
+                        a(href="#").filter__discription-link Size guide
+                    .filter__options
+                        input#1(type='checkbox')
+                        label(for='1').filter__option
+                            p XS
+                            span
+                        input#2(type='checkbox')
+                        label(for='2').filter__option
+                            p S
+                            span
+                        input#3(type='checkbox')
+                        label(for='3').filter__option
+                            p M
+                            span
+                        input#4(type='checkbox')
+                        label(for='4').filter__option
+                            p L
+                            span
+                        input#5(type='checkbox')
+                        label(for='5').filter__option
+                            p XL
+                            span
+
+            li.filter.d-none.d-sm-block
+                .link.filter__title
+                    p.filter__name Colour
+                    .filter__selected
+                        |Any
+                    .filter__state
+                        .filter__state_plus
+                            |+
+                        .filter__state_minus.d-none
+                            |-
+                    .filter__field
+                ul.submenu.filter__field
+                    .filter__discription
+                        p.filter__discription-title Choose color
+                        //- a(href="#").filter__discription-link Size guide
+                    .filter__options
+                        input#6(type='checkbox')
+                        label(for='6').filter__option
+                            p White
+                            span
+                        input#7(type='checkbox')
+                        label(for='7').filter__option
+                            p Black
+                            span
+                        input#8(type='checkbox')
+                        label(for='8').filter__option
+                            p Red
+                            span
+                        input#15(type='checkbox')
+                        label(for='15').filter__option
+                            p Green
+                            span
+
+
+            li.filter.d-none.d-sm-block
+                .link.filter__title
+                    p.filter__name Additional
+                    .filter__selected
+                        |Any
+                    .filter__state
+                        .filter__state_plus
+                            |+
+                        .filter__state_minus.d-none
+                            |-
+                    .filter__field
+                ul.submenu.filter__field
+                    .filter__discription
+                        p.filter__discription-title Choose additional
+                        //- a(href="#").filter__discription-link Size guide
+                    .filter__options
+                        input#9(type='checkbox')
+                        label(for='9').filter__option
+                            p asd
+                            span
+                        input#10(type='checkbox')
+                        label(for='10').filter__option
+                            p asd
+                            span
+                        input#11(type='checkbox')
+                        label(for='11').filter__option
+                            p asd
+                            span
+
+            li.filter.d-none.d-sm-block
+                .link.filter__title
+                    p.filter__name Price
+                    .filter__selected
+                        |Any
+                    .filter__state
+                        .filter__state_plus
+                            |+
+                        .filter__state_minus.d-none
+                            |-
+                    .filter__field
+                ul.submenu.filter__field
+                    .filter__discription
+                        p.filter__discription-title Choose price
+                        //- a(href="#").filter__discription-link Size guide
+                    .filter__options
+                        input#12(type='checkbox')
+                        label(for='12').filter__option
+                            p 0-500
+                            span
+                        input#13(type='checkbox')
+                        label(for='13').filter__option
+                            p 500-1000
+                            span
+                        input#14(type='checkbox')
+                        label(for='14').filter__option
+                            p 1500-3000
+                            span
+        hr.sort__border.d-sm-none
+

@@ -1,0 +1,44 @@
+mixin header()
+    .container
+        header.header
+            a(href="#").header__menu.header__item
+                .header__menu-button
+                    .mainContainer
+                        .menuBtn
+                            span.lines
+                        .header__menu-title.d-none.d-md-block
+                            | Menu
+            nav.mainMenu
+                .container
+                    ul.mainMenu__list
+                        li.mainMenu__item
+                            a(href='./Catalog.html').mainMenu__item-link Woman
+                            hr.mainMenu__border
+                        
+                        li.mainMenu__item
+                            a(href='./Catalog.html').mainMenu__item-link Man
+                            hr.mainMenu__border
+                        
+                        li.mainMenu__item
+                            a(href='./Catalog.html').mainMenu__item-link Kids
+                            hr.mainMenu__border
+                        
+                        li.mainMenu__item
+                            a(href='./Catalog.html').mainMenu__item-link Stories
+                            hr.mainMenu__border
+                        
+                        li.mainMenu__item
+                            a(href='./Catalog.html').mainMenu__item-link SALE
+                            hr.mainMenu__border
+                    .mainMenu__search.d-md-none
+                        | srch
+                        input(type="search").mainMenu__search-field
+            a(href="#").header__search.header__item.d-none.d-md-block.search
+                | srch
+                input(type="search").search__field
+            a(href="#").header__cart.header__item
+                .header__cart-long-fig.d-none.d-xl-block
+                .header__cart-short-fig
+                p Cart
+                .header__cart-count
+                    | 3

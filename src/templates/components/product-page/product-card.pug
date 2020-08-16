@@ -1,0 +1,58 @@
+include ../product.pug
+
+mixin product-card(imgPath,imgPreviewPath,title,price,discription,summary)
+    .container
+        .product-card
+            .product-card__gallery
+                .product-card__img
+                    img#js-currentImg(src="../images/product-page/product-card-img-preview.svg" alt="")
+                .product-card__img-previews.js-imgs
+                    .product-card__img-preview
+                        img(src="../images/product-page/product-card-img-preview.svg" alt="")
+                    .product-card__img-preview
+                        img(src='../images/product-page/product-card-img-preview2.svg' alt="")
+                    .product-card__img-preview
+                        img(src='../images/product-page/product-card-img-preview3.svg' alt="")
+                    .product-card__img-preview
+                        img(src='../images/product-page/product-card-img-preview4.svg' alt="")
+            .product-card__about-product 
+                .breadcrumbs
+                    a(href="#") Main page 
+                    p  / 
+                    a(href="#") Catalog
+                    p  / 
+                    a(href="#") Coat & Jackets
+                .product-card__about-product-title 
+                    p= title 
+                .product-card__about-product-price 
+                    p= price 
+                .row
+                    .col-7
+                        .product-card__about-product-discription 
+                            p.product-card__subtitle description
+                            p.product-card__about-product-text= discription
+                    .col-5  
+                        .product-card__about-product-summary 
+                            p.product-card__subtitle Summary
+                            p.product-card__about-product-text= summary
+                .row
+                    .col-7
+                        select.js-select.product-card__about-product-select
+                            option(value='XS') XS
+                            option(value='S') S
+                            option(value='M') M
+                            option(value='L') L
+                    .col-5  
+                        button.product-card__button
+                            p Add to cart
+                            p +
+                hr.product-card__border
+                p.product-card__subtitle.product-card__match-title Match with
+                .row
+                    .col-4
+                        +product('../images/products/mathc-product.svg','white Shirt with feathers','$24','$14')
+                    .col-4
+                        +product('../images/products/mathc-product1.svg',' Printed flowing trousers','$72')
+                    .col-4
+                        +product('../images/products/mathc-product.svg',' track sole ankle boots','$64')
+

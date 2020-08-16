@@ -1,0 +1,52 @@
+.menuBtn {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: 9px;
+  z-index: 101;
+    
+  > span {
+    border-radius: 1px;
+    width: 100%;
+    position: absolute;
+    transition: height 100ms;
+    &:after,
+    &:before {
+      content: "";
+      background-color: $dark;
+      border-radius: 1px;
+      height: 2px;
+      position: absolute;
+      transition: all 200ms;
+      &:hover,
+      &:focus {
+        background-color: #a0a0a0;
+      }
+    }
+    &:after {
+      width: 100%;
+      top: -5px;
+    }
+    &:before {
+      width: 70%;
+      bottom: -5px;
+    }
+  }
+  &.act {
+    > span {
+      height: 0;
+      &:after,
+      &:before {
+        background-color: #4e4e4e;
+        top: 1px;
+      }
+      &:after {
+        transform: rotate(30deg);
+      }
+      &:before {
+        width: 100%;
+        transform: rotate(-30deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+include ../product.pug
+
+mixin similar()
+    .container
+        .similar-items
+            .similar-items__title
+                | Similar Items
+            .row
+                .col-3
+                    +product('../images/products/product-image13.svg',' KNIT Waistcoat with vents','$24')
+                .col-3
+                    +product('../images/products/product-image14.svg',' Waistcoat with vents','$72')
+                .col-3
+                    +product('../images/products/product-image15.svg',' TEXTURED WAISTCOAT WITH COLLAR','$64')
+                .col-3
+                    +product('../images/products/product-image12.svg',' WAISTCOAT WITH CONTRAST PIPING','$24')
+            .more
+                a(href="#") more

@@ -1,0 +1,16 @@
+.shopping {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -60px);
+  z-index: 40;
+  a {
+    font-family: "Gotham";
+    letter-spacing: 1.5em;
+    text-transform: uppercase;
+    color: #383838;
+    color: $dark;
+  }
+}

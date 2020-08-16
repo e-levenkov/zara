@@ -1,0 +1,84 @@
+.header {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: minmax(0, .6fr) minmax(0, .1fr) minmax(0, 2.3fr);
+  padding: 60px 0;
+  gap: 0px 0px;
+  grid-template-areas: "header__menu header__search header__cart";
+
+  @include md {
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, .6fr) minmax(0, 1.2fr);
+  }
+
+  @include lg {
+    padding: 60px 0 110px;
+  }
+
+  &__item {
+    position: relative;
+    font-family: "Gotham";
+
+    letter-spacing: 1.5em;
+    text-transform: uppercase;
+    color: #383838;
+    z-index: 500;
+  }
+
+  &__menu {
+    display: flex;
+    grid-area: header__menu;
+
+    &-title {
+      margin-left: 70px;
+    }
+  }
+
+  &__search {
+    grid-area: header__search;
+    justify-self: center;
+  }
+
+  &__cart {
+    grid-area: header__cart;
+    justify-self: end;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    &-long-fig {
+      width: 120px;
+      height: 2px;
+      background-color: #383838;
+    }
+
+    &-short-fig {
+      width: 20px;
+      height: 2px;
+      margin-right: 20px;
+      background-color: #383838;
+
+      @include md {
+        margin-right: 25px;
+        margin-left: 10px;
+      }
+
+      @include xxl {
+        margin-right: 40px;
+      }
+    }
+
+    &-count {
+      font-weight: bold;
+      margin-left: 5px;
+
+      @include sm {
+        margin-left: 15px;
+      }
+
+      @include md {
+        margin-left: 25px;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+.similar-items {
+  &__title {
+    margin: 50px 0 30px;
+    font-size: 26px;
+    line-height: 150%;
+    letter-spacing: .15em;
+    color: $dark;
+
+    @include md {
+      margin: 100px 0 60px;
+    }
+  }
+}
